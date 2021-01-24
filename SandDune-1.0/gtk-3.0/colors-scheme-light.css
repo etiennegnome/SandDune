@@ -1,0 +1,60 @@
+/******************************************************************************/
+/*(((((((( defining accent color )))))*/
+
+@define-color color_accent /*#7e5e64;*/ #eaa84a;
+
+/*******************************************************************************/
+/*(((((((((( defining main-color of the headerbar )))))))))*/
+
+@define-color headerbar_color #535252; /*mix(shade(@headerbar_selected_accent_color, 0.45), #535252, 0.75);*/
+@define-color headerbar_text_color #DDDDDD;
+@define-color headerbar_selected_text_color #FFFFFF;
+@define-color headerbar_disabled_text_color #929595;
+@define-color headerbar_text_shadow_color #000000; /*transparent;*/
+@define-color headerbar_selected_text_shadow_color #000000;
+@define-color headerbar_selected_accent_color #91614f; /*#7e5e64;*/ /*#eaa84a;*/ /*@color_accent;*/
+@define-color headerbar_button_border_color shade(@headerbar_color,0.5);
+
+/******************************************************************************/
+/*(((((((( defining normal button color )))))*/
+
+@define-color normal-button-color #fcfcf9; /*#f2f2f2;*/ /*#ede8e1;*/
+
+/******************************************************************************/
+/*(((((((( defining colors for other widgets )))))*/
+
+@define-color text_color #404040;
+@define-color selected_text_color #FFFFFF;
+@define-color text_shadow_color #000000; /*transparent;*/
+@define-color disabled_text_color #929595;
+@define-color disabled_scale_color shade(@color_accent, 1.50);
+
+/*******************************************************************************/
+/*(((((((((( defining colors of the sidebar )))))))))*/
+
+@define-color sidebar_bg_color #e6dccf; /*#dee8e8;*/
+@define-color sidebar_bg_color_hover #777777; /*@color_accent;*/
+@define-color sidebar_color_accent @color_accent;
+@define-color sidebar_text_color #404040;
+@define-color sidebar_text_color_hover #404040;
+@define-color sidebar_selected_text_color #FFFFFF;
+
+/*******************************************************************************/
+/*(((((((((( defining bg-color of menus/popover )))))))))*/
+
+@define-color menu_popover_bg_color #e6dccf; /*#D7DCE6;*/
+
+/*******************************************************************************/
+/*(((((((((( defining windows background color )))))))))*/
+
+@define-color global_bg_color #f6f6f6; /*#374747;*/ /*rgba(55, 71, 71, 0.99)*/ /*mix(shade(@headerbar_selected_accent_color, 0.5), #f6f6f6, 0.985);*/
+@define-color nautilus_notebook_bg_color #f9f9f9; /*#1d2626;*/ /*rgba(49, 64, 64, 0.98)*/ /*mix(shade(@headerbar_selected_accent_color, 0.5), #f9f9f9, 0.975);*/
+
+/*******************************************************************************/
+/*(((((((( defining the colors of the windowbuttons )))))*/
+
+@define-color minimize_color #837676; /*#4AEAA8;*/
+@define-color maximize_color @color_accent;
+@define-color close_color #905845; /*#735247;*/ /*#EA4ADC;*/
+@define-color restore_color @maximize_color;
+@define-color backdrop_color #6e6e6e;
